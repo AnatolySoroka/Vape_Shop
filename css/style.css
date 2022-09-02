@@ -1,5 +1,6 @@
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -77,8 +78,31 @@ a {
 
 .menu {
     position: absolute;
-    top: -150%;
+    top: -200%;
+    transition: all .4s ease;
 }
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__list-item+.menu__list-item {
+    margin-top: 10px;
+}
+
+.menu.active {
+    background-color: #0f0f0f;
+    top: 100px;
+    width: 100%;
+    z-index: 50;
+    padding: 20px 0;
+}
+
+
+/* body.active {
+    overflow: hidden;
+} */
 
 
 /*
@@ -88,7 +112,7 @@ a {
 */
 
 .offer {
-    padding: 103px 0 158px;
+    padding: 103px 0 0;
     /* background-color: #0f0f0f; */
 }
 
@@ -312,6 +336,11 @@ a {
     left: 79px;
 }
 
+.scroll__down img {
+    margin: 70px auto 0;
+    display: none;
+}
+
 
 /*
 **********************************************
@@ -320,8 +349,7 @@ a {
 */
 
 .statistics {
-    /* background-color: #0f0f0f; */
-    padding: 0 0 158px;
+    padding: 158px 0 158px;
     color: #fff;
 }
 
@@ -463,6 +491,48 @@ a {
 
 /*
 ********************************************
+************* Location section *************
+********************************************
+*/
+
+.location {
+    color: #fff;
+    padding: 0 0 150px;
+}
+
+.location__title {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.location__title span {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+}
+
+.location__list {
+    background-color: #0f0f0f;
+    color: #fff;
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 5px;
+}
+
+
+/*
+********************************************
 ************* Partners section *************
 ********************************************
 */
@@ -479,6 +549,7 @@ a {
     top: -427px;
     right: 1px;
     min-width: 1000px;
+    z-index: -1;
 }
 
 .partners__title {
@@ -540,6 +611,44 @@ a {
 
 .logo-item-5 {
     background: url('../images/partner-logo-5.png') no-repeat 2px center;
+}
+
+
+/*
+********************************************
+************* Galery section ***************
+********************************************
+*/
+
+.galery {
+    color: #fff;
+    padding: 0 0 150px;
+}
+
+.slider__item {
+    margin: 0 auto;
+}
+
+.galery__title {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.galery__title span {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
 }
 
 

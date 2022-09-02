@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300&family=Russo+One&family=Syne:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,16 +25,16 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">Статистика магазину</a>
+                            <a href="#statistics" class="menu__list-link">Статистика магазину</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">Програма лояльності</a>
+                            <a href="#loyalty" class="menu__list-link">Програма лояльності</a>
                         </li>
                         <li class="menu__list-item">
                             <a href="#" class="menu__list-link">Карта магазинів</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">Партнери</a>
+                            <a href="#partners" class="menu__list-link">Партнери</a>
                         </li>
                         <li class="menu__list-item">
                             <a href="#" class="menu__list-link">Галерея</a>
@@ -48,7 +48,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="offer">
+        <section id="offer" class="offer">
             <div class="container">
                 <div class="offer__inner">
                     <p class="offer__subtitle">Vape Shop</p>
@@ -83,9 +83,12 @@
                         <span>Рідини для електронних сигарет</span>
                     </div>
                 </div>
+                <a href="#statistics" class="scroll__down">
+                    <img src="images/shewron-down.svg" alt="">
+                </a>
             </div>
         </section>
-        <section class="statistics">
+        <section id="statistics" class="statistics">
             <div class="container">
                 <h2 class="statistics__title"><span>01</span>statistics</h2>
                 <div class="statistics__items">
@@ -117,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <section class="loyalty">
+        <section id="loyalty" class="loyalty">
             <div class="container">
                 <h2 class="loyalty__title"><span>02</span>loyalty program</h2>
                 <div class="loyalty__items">
@@ -140,7 +143,21 @@
                 </div>
             </div>
         </section>
-        <section class="partners">
+        <section class="location">
+            <div class="container">
+                <h2 class="location__title"><span>03</span>Location</h2>
+                <select class="location__list">
+                    <option value="" selected>Локації</option>
+                    <option value="1">Lutsk</option>
+                    <option value="2">Khmelnytskiy</option>
+                    <option value="3">Volodymyr</option>
+                    <option value="4">Kovel</option>
+                    <option value="5">Kivertsi</option>
+                  </select>
+                <img src="images/Ukraine-Map.png" alt="Карта України">
+            </div>
+        </section>
+        <section id="partners" class="partners">
             <img src="images/smoke.png" alt="" class="smoke-img">
             <div class="container">
                 <h2 class="partners__title"><span>04</span>Logo partners</h2>
@@ -160,6 +177,14 @@
                     <div class="partners__logo-item logo-item-5">
 
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="galery">
+            <div class="container">
+                <h2 class="galery__title"><span>05</span>Our Photo</h2>
+                <div class="galery__slider">
+                    <img src="images/galery-1.jpg" alt="" class="slider__item">
                 </div>
             </div>
         </section>
@@ -207,7 +232,7 @@
             <div class="footer__bottom">
                 <div class="social__link-items">
                     <a href="#" class="social__link-instagram">cc_vapeshop_ </a>
-                    <a href="#" class="social__link-email">tovcloudcastle@gmail.com</a>
+                    <a href="mailto:tovcloudcastle@gmail.com" class="social__link-email">tovcloudcastle@gmail.com</a>
                     <p class="author">Design by<a class="author__link" href="#">https://www.behance.net/dariakhevziuk</a></p>
                 </div>
                 <div class="copyrights__items">
