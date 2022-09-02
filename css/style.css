@@ -6,6 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
+    background-color: #0f0f0f;
 }
 
 a {
@@ -88,7 +89,7 @@ a {
 
 .offer {
     padding: 103px 0 158px;
-    background-color: #0f0f0f;
+    /* background-color: #0f0f0f; */
 }
 
 .offer__inner {
@@ -319,7 +320,7 @@ a {
 */
 
 .statistics {
-    background-color: #0f0f0f;
+    /* background-color: #0f0f0f; */
     padding: 0 0 158px;
     color: #fff;
 }
@@ -393,7 +394,7 @@ a {
 
 .loyalty {
     padding: 0 0 158px;
-    background-color: #0f0f0f;
+    /* background-color: #0f0f0f; */
     color: #fff;
 }
 
@@ -467,7 +468,7 @@ a {
 */
 
 .partners {
-    background-color: #0f0f0f;
+    /* background-color: #0f0f0f; */
     padding: 0 0 158px;
     color: #fff;
     position: relative;
@@ -521,15 +522,6 @@ a {
     margin-left: 20px;
 }
 
-
-/* .partners__logo-item:nth-child(4) {
-    margin-top: 20px;
-}
-
-.partners__logo-item:nth-child(5) {
-    margin-top: 20px;
-} */
-
 .logo-item-1 {
     background: url('../images/partner-logo-1.png') no-repeat center;
 }
@@ -548,4 +540,84 @@ a {
 
 .logo-item-5 {
     background: url('../images/partner-logo-5.png') no-repeat 2px center;
+}
+
+
+/*
+********************************************
+************* Feedback section *************
+********************************************
+*/
+
+.title__wrapper {
+    width: 270px;
+    margin: 0 auto 50px;
+}
+
+.feedback__title {
+    position: relative;
+    color: #fff;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 53px;
+}
+
+.feedback__title:before {
+    content: '';
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: -6px;
+    left: -15px;
+    background-image: url('../images/feedback-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.form .input {
+    width: 100%;
+    height: 51px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #595656;
+    padding: 0 20px;
+}
+
+.form .input::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.035em;
+}
+
+.form .input+.input {
+    margin-top: 12px;
+}
+
+.submit__btn {
+    width: 171px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #FED607;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    text-transform: capitalize;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #fff;
+    margin: 68px auto 0;
 }
