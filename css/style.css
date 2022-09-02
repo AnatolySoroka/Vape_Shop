@@ -450,3 +450,82 @@ a {
     font-size: 14px;
     line-height: 17px;
 }
+
+
+/*
+************* Partners *************
+*/
+
+.partners {
+    background-color: #0f0f0f;
+    padding: 0 0 158px;
+    color: #fff;
+}
+
+.partners__title {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    margin-bottom: 44px;
+}
+
+.partners__title span {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+}
+
+.partners__logo-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.partners__logo-item {
+    width: 92px;
+    height: 92px;
+    border: 1px solid rgba(254, 214, 7, 0.3);
+    border-radius: 50%;
+}
+
+.partners__logo-item+.partners__logo-item {
+    margin-left: 20px;
+}
+
+.partners__logo-item:nth-child(4) {
+    margin-top: 20px;
+}
+
+.partners__logo-item:nth-child(5) {
+    margin-top: 20px;
+}
+
+.logo-item-1 {
+    background: url('../images/partner-logo-1.png') no-repeat center;
+}
+
+.logo-item-2 {
+    background: url('../images/partner-logo-2.png') no-repeat 12px center;
+}
+
+.logo-item-3 {
+    background: url('../images/partner-logo-3.png') no-repeat center;
+}
+
+.logo-item-4 {
+    background: url('../images/partner-logo-4.svg') no-repeat center;
+}
+
+.logo-item-5 {
+    background: url('../images/partner-logo-5.png') no-repeat 2px center;
+}
