@@ -549,6 +549,10 @@ a {
 ********************************************
 */
 
+.feedback {
+    padding-bottom: 155px;
+}
+
 .title__wrapper {
     width: 270px;
     margin: 0 auto 50px;
@@ -617,4 +621,120 @@ a {
     background-color: transparent;
     color: #fff;
     margin: 68px auto 0;
+}
+
+.footer {
+    padding: 37px 0 50px;
+    border-top: 1px solid #fff;
+}
+
+.footer__title {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+}
+
+.footer__title span {
+    background-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__menu-list {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.035em;
+    color: #989696;
+}
+
+.footer__menu-item {
+    margin-top: 8px;
+}
+
+.social__link-items {
+    margin-top: 40px;
+}
+
+.social__link-instagram {
+    position: relative;
+    display: block;
+    padding-left: 54px;
+}
+
+.social__link-email {
+    position: relative;
+    padding-left: 54px;
+    display: block;
+    margin-top: 34px;
+}
+
+.social__link-instagram::before {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    background-image: url('../images/Instagram-icon.svg');
+    background-repeat: no-repeat;
+    left: 0;
+    top: -15px;
+}
+
+.social__link-email::before {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    background-image: url('../images/mail-icon.svg');
+    background-repeat: no-repeat;
+    left: 0;
+    top: -15px;
+}
+
+.author {
+    display: inline-block;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    color: #A7A0A0;
+    margin-top: 34px;
+}
+
+.author__link {
+    color: #A7A0A0;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.copyrights__items {
+    display: flex;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.035em;
+    text-decoration: underline;
+    margin-top: 53px;
+}
+
+a.copyrights__item {
+    color: #A7A0A0;
+}
+
+.copyrights__item:nth-child(2) {
+    margin-left: 24px;
 }
