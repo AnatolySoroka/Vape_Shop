@@ -83,7 +83,7 @@ a {
 */
 
 .offer {
-    padding-top: 103px;
+    padding: 103px 0 158px;
     background-color: #0f0f0f;
 }
 
@@ -314,7 +314,7 @@ a {
 
 .statistics {
     background-color: #0f0f0f;
-    padding: 158px 0;
+    padding: 0 0 158px;
     color: #fff;
 }
 
@@ -376,4 +376,77 @@ a {
     border-width: 1px;
     width: 100%;
     display: none;
+}
+
+
+/*
+************* Loyalty *************
+*/
+
+.loyalty {
+    padding: 0 0 158px;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+.loyalty__title {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    margin-bottom: 44px;
+}
+
+.loyalty__title span {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+}
+
+.loyalty__item {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    border-left: 1px solid #fff;
+    transition: all .8s ease;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.loyalty__item:hover {
+    border: 1px solid #FED607;
+    padding: 32px 0;
+}
+
+.loyalty__item-text {
+    padding-left: 12px;
+    max-width: 286px;
+}
+
+.loyalty__item+.loyalty__item {
+    margin-top: 40px;
+}
+
+.loyalty__card-wrapper {
+    margin-top: 79px;
+}
+
+.loyalty__card {
+    margin: 0 auto;
+}
+
+.loyalty__card-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 17px;
 }
