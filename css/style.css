@@ -20,7 +20,9 @@ a {
 
 
 /*
+******************************************
 ************* Header section *************
+******************************************
 */
 
 .header {
@@ -79,7 +81,9 @@ a {
 
 
 /*
+*****************************************
 ************* Offer section *************
+*****************************************
 */
 
 .offer {
@@ -309,7 +313,9 @@ a {
 
 
 /*
-************* Statistics *************
+**********************************************
+************* Statistics section *************
+**********************************************
 */
 
 .statistics {
@@ -380,7 +386,9 @@ a {
 
 
 /*
-************* Loyalty *************
+********************************************
+************* Loyalty section **************
+********************************************
 */
 
 .loyalty {
@@ -453,13 +461,23 @@ a {
 
 
 /*
-************* Partners *************
+********************************************
+************* Partners section *************
+********************************************
 */
 
 .partners {
     background-color: #0f0f0f;
     padding: 0 0 158px;
     color: #fff;
+    position: relative;
+}
+
+.smoke-img {
+    position: absolute;
+    top: -427px;
+    right: 1px;
+    min-width: 1000px;
 }
 
 .partners__title {
@@ -470,7 +488,7 @@ a {
     line-height: 48px;
     letter-spacing: -0.035em;
     text-transform: uppercase;
-    margin-bottom: 44px;
+    margin-bottom: 24px;
 }
 
 .partners__title span {
@@ -496,19 +514,21 @@ a {
     height: 92px;
     border: 1px solid rgba(254, 214, 7, 0.3);
     border-radius: 50%;
+    margin-top: 20px;
 }
 
 .partners__logo-item+.partners__logo-item {
     margin-left: 20px;
 }
 
-.partners__logo-item:nth-child(4) {
+
+/* .partners__logo-item:nth-child(4) {
     margin-top: 20px;
 }
 
 .partners__logo-item:nth-child(5) {
     margin-top: 20px;
-}
+} */
 
 .logo-item-1 {
     background: url('../images/partner-logo-1.png') no-repeat center;
