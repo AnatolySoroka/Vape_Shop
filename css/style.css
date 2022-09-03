@@ -91,16 +91,27 @@ a {
     margin-top: 10px;
 }
 
+.menu__list-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.035em;
+    color: #A7A0A0;
+}
+
 .menu.active {
     background-color: #0f0f0f;
     top: 100px;
     width: 100%;
     z-index: 50;
     padding: 20px 0;
+    overflow: auto;
 }
 
 
-/* body.active {
+/* body.lock {
     overflow: hidden;
 } */
 
@@ -113,7 +124,6 @@ a {
 
 .offer {
     padding: 103px 0 0;
-    /* background-color: #0f0f0f; */
 }
 
 .offer__inner {
@@ -150,6 +160,22 @@ a {
 }
 
 .order__btn {
+    width: 171px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #FED607;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+
+.offer__btn {
     width: 171px;
     height: 40px;
     display: grid;
@@ -847,3 +873,95 @@ a.copyrights__item {
 .copyrights__item:nth-child(2) {
     margin-left: 24px;
 }
+
+@media (min-width: 1270px) {
+
+    .container {
+        padding: 0 45px;
+    }
+
+    .header__logo {
+        display: block;
+    }
+
+    .burger__menu {
+        display: none;
+    }
+
+    .header {
+        padding-top: 0;
+    }
+
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        position: static;
+    }
+
+    .menu__list {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-top: 0;
+        margin-left: 35px;
+    }
+
+    .order__btn {
+        margin-left: 37px;
+    }
+
+    .offer__inner {
+        display: block;
+    }
+
+    .offer__wrapper {
+        margin-top: 245px;
+    }
+
+    .offer__title {
+        order: -1;
+        font-size: 100px;
+        line-height: 120px;
+        letter-spacing: -0.035em;
+        margin-bottom: 0;
+    }
+
+    .offer__title span {
+        display: inline;
+    }
+
+    .offer__subtitle {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: -0.035em;
+        margin-top: -10px;
+    }
+
+    .offer__btn {
+        margin-top: 65px;
+    }
+
+    .scroll__down {
+        display: block;
+    }
+
+    .products__inner {
+        width: 613px;
+        height: 613px;
+        right: 0;
+        top: 0;
+        margin: 0;
+        display: inline-block;
+    }
+}
+
+/* @media (min-width: 768px) {
+
+} */
