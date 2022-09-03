@@ -90,7 +90,6 @@
                 </a>
             </div>
         </section>
-
         <section id="statistics" class="statistics">
             <div class="container">
                 <h2 class="statistics__title"><span>01</span>statistics</h2>
@@ -123,7 +122,6 @@
                 </div>
             </div>
         </section>
-        <!--
         <section id="loyalty" class="loyalty">
             <div class="container">
                 <h2 class="loyalty__title"><span>02</span>loyalty program</h2>
@@ -150,44 +148,46 @@
         <section class="location">
             <div class="container">
                 <h2 class="location__title"><span>03</span>Location</h2>
-                <select class="location__list">
-                    <option value="" selected>Локації</option>
-                    <option value="1">Lutsk</option>
-                    <option value="2">Khmelnytskiy</option>
-                    <option value="3">Volodymyr</option>
-                    <option value="4">Kovel</option>
-                    <option value="5">Kivertsi</option>
-                  </select>
-                <img src="images/Ukraine-Map.png" alt="Карта України">
+                <div class="location__wrapper">
+                    <select class="location__list">
+                        <option value="" selected>Локації</option>
+                        <option value="1">Lutsk</option>
+                        <option value="2">Khmelnytskiy</option>
+                        <option value="3">Volodymyr</option>
+                        <option value="4">Kovel</option>
+                        <option value="5">Kivertsi</option>
+                      </select>
+                    <img src="images/Ukraine-Map.png" alt="Карта України">
+                </div>
             </div>
         </section>
         <section id="partners" class="partners">
             <img src="images/smoke.png" alt="" class="smoke-img">
             <div class="container">
-                <h2 class="partners__title"><span>04</span>Logo partners</h2>
+                <h2 class="partners__title"><span>04</span>Partners</h2>
                 <div class="partners__logo-items">
                     <div class="partners__logo-item logo-item-1">
-
+                        <img src="images/partner-logo-1.png" alt="">
                     </div>
                     <div class="partners__logo-item logo-item-2">
-
+                        <img src="images/partner-logo-2.png" alt="">
                     </div>
                     <div class="partners__logo-item logo-item-3">
-
+                        <img src="images/partner-logo-3.png" alt="">
                     </div>
                     <div class="partners__logo-item logo-item-4">
-
+                        <img src="images/partner-logo-4.svg" alt="">
                     </div>
                     <div class="partners__logo-item logo-item-5">
-
+                        <img src="images/partner-logo-5.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="galery">
+        <section class="gallery">
             <div class="container">
-                <h2 class="galery__title"><span>05</span>Our Photo</h2>
-                <div class="galery__slider">
+                <h2 class="gallery__title"><span>05</span>Our Photo</h2>
+                <div class="gallery__slider">
                     <img src="images/galery-1.jpg" alt="" class="slider__item">
                 </div>
             </div>
@@ -200,8 +200,9 @@
                 <form class="form">
                     <input class="input" type="text" placeholder="Ім'я" required>
                     <input id="phone" class="input" type="tel" required>
-                    <input class="input" type="text" placeholder="Пропозиції / співпраця / побажання" required>
-                    <input class="submit__btn" type="submit" value="Надіслати">
+                    <textarea class="input" name="" id="" cols="" rows="" placeholder="Пропозиції / співпраця / побажання" required></textarea>
+                    <!-- <input class="input input-text" type="text" placeholder="Пропозиції / співпраця / побажання" required> -->
+                    <input class="submit__btn" type="submit" value="Надіслати" placeholder="Пропозиції / співпраця / побажання" required>
                 </form>
             </div>
         </section>
@@ -245,11 +246,11 @@
                 </div>
             </div>
         </div>
-    </footer> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="https://unpkg.com/imask"></script>
-        <script src="js/main.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
