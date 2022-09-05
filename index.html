@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300&family=Russo+One&family=Syne:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,13 +32,13 @@
                             <a href="#loyalty" class="menu__list-link">Програма лояльності</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">Карта магазинів</a>
+                            <a href="#location" class="menu__list-link">Карта магазинів</a>
                         </li>
                         <li class="menu__list-item">
                             <a href="#partners" class="menu__list-link">Партнери</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">Галерея</a>
+                            <a href="#gallery" class="menu__list-link">Галерея</a>
                         </li>
                         <li class="menu__list-item">
                             <a href="#" class="order__btn">Замовити</a>
@@ -145,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section class="location">
+        <section id="location" class="location">
             <div class="container">
                 <h2 class="location__title"><span>03</span>Location</h2>
                 <div class="location__wrapper">
@@ -184,15 +185,39 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <div class="container">
                 <h2 class="gallery__title"><span>05</span>Our Photo</h2>
-                <div class="gallery__slider">
-                    <img src="images/galery-1.jpg" alt="" class="slider__item">
+                <!-- <div class="gallery__slider">
+                </div> -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images/galery-1.jpg" alt="" class="slider__item">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/galery-2.jpg" alt="" class="slider__item">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/galery-3.jpg" alt="" class="slider__item">
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </section>
-        <section class="feedback">
+        <section id="feedback" class="feedback">
             <div class="container">
                 <div class="title__wrapper">
                     <h2 class="feedback__title">Feedback</h2>
@@ -201,12 +226,22 @@
                     <input class="input" type="text" placeholder="Ім'я" required>
                     <input id="phone" class="input" type="tel" required>
                     <textarea class="input" name="" id="" cols="" rows="" placeholder="Пропозиції / співпраця / побажання" required></textarea>
-                    <!-- <input class="input input-text" type="text" placeholder="Пропозиції / співпраця / побажання" required> -->
                     <input class="submit__btn" type="submit" value="Надіслати" placeholder="Пропозиції / співпраця / побажання" required>
                 </form>
             </div>
         </section>
     </main>
+    <div class="popup reg_form">
+        <a href="#" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <img src="images/logo.svg" alt="Логотип">
+                <p class="popup_p">Дякуємо!</p>
+                <p>Ваш запит надіслано</p>
+                <button type="submit" class="close__btn">Готово</button>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__top">
@@ -248,8 +283,9 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
     <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
