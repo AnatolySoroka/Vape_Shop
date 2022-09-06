@@ -23,16 +23,29 @@ new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    // effect: 'coverflow',
-    // coverflowEffect: {
-    //     rotate: 0,
-    //     stretch: 1,
-    //     slideShadows: true,
-    // },
-    slidesPerView: 1.14,
-    // slideToClickedSlide: true,
+    slidesPerView: 1.25,
+    spaceBetween: 15,
+    slideToClickedSlide: true,
     loop: true,
-    spaceBetween: 15
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 1,
+        slideShadows: true,
+    },
+    centeredSlides: false,
+    breakpoints: {
+        768: {
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 1,
+                slideShadows: true,
+            },
+            centeredSlides: true,
+            slidesPerView: 2,
+        }
+    }
 });
 
 
