@@ -696,9 +696,28 @@ a {
     max-width: 100%;
 }
 
+.swiper-wrapper {
+    padding-bottom: 100px;
+}
+
+.swiper__buttons {
+    position: absolute;
+    width: 156px;
+    margin: 0 auto;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    z-index: 300;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 0;
 }
 
 .swiper-3d {
