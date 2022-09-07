@@ -1,18 +1,18 @@
-$(function() {
-    $('.burger__menu').click(function(event) {
+$(function () {
+    $('.burger__menu').click(function (event) {
         $('.burger__menu,.menu').toggleClass('active');
         $('html').toggleClass('lock');
     });
-    $('form').submit(function(event) {
+    $('form').submit(function (event) {
         $('.popup').toggleClass('active');
         $('html').toggleClass('lock');
         return false
     });
-    $('.close__btn').click(function(event) {
+    $('.close__btn').click(function (event) {
         $('.popup').toggleClass('active');
         $('html').toggleClass('lock');
     })
-    $('.menu__list-link').click(function(event) {
+    $('.menu__list-link').click(function (event) {
         $('.menu').toggleClass('active');
         $('html').toggleClass('lock');
     })
@@ -33,7 +33,7 @@ new Swiper('.swiper', {
             centeredSlides: true,
             slidesPerView: 2.3,
         },
-        
+
     }
 });
 
