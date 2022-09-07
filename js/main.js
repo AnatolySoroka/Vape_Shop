@@ -27,24 +27,13 @@ new Swiper('.swiper', {
     spaceBetween: 15,
     slideToClickedSlide: true,
     loop: true,
-    effect: 'coverflow',
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 1,
-        slideShadows: true,
-    },
     centeredSlides: false,
     breakpoints: {
-        768: {
-            effect: 'coverflow',
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 1,
-                slideShadows: true,
-            },
+        1024: {
             centeredSlides: true,
-            slidesPerView: 2,
-        }
+            slidesPerView: 2.3,
+        },
+        
     }
 });
 
