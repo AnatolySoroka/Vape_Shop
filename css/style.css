@@ -1059,7 +1059,7 @@ a.copyrights__item {
     }
 }
 
-@media (min-width: 705px) {
+@media (min-width: 740px) {
     .offer__inner {
         flex-direction: row;
         justify-content: space-between;

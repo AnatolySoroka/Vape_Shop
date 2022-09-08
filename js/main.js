@@ -18,6 +18,8 @@ $(function () {
     })
 })
 
+// Слайдер
+
 new Swiper('.swiper', {
     navigation: {
         nextEl: '.swiper-button-next',
@@ -36,9 +38,6 @@ new Swiper('.swiper', {
 
     }
 });
-
-
-
 
 // Маска інпута
 let element = document.getElementById('phone');
